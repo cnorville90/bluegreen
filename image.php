@@ -13,7 +13,7 @@ if ( $deployment == 'blue') {
 } elseif ($deployment == 'red')  {
   $color = imagecolorallocate($im, 255, 0, 0);
 } elseif ($deployment == 'gonnabearainbow')  {
-  $color = imagecolorallocate($im, 100, 100, 1000);
+  $color = imagecolorallocate($im, 100, 100, 100);
 } else {
   $color = imagecolorallocate($im, 0, 0, 255);
 }
