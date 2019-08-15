@@ -4,7 +4,7 @@ $im = imagecreatetruecolor(200, 200);
 $white = imagecolorallocate($im, 255, 255, 255);
 // Line reserved to trigger the webhook in the lab. 
 //$deployment = getenv("COLOR");
-$deployment = 'red';
+$deployment = 'gonnabearainbow';
 
 if ( $deployment == 'blue') {
   $color = imagecolorallocate($im, 0, 0, 255);
@@ -12,6 +12,8 @@ if ( $deployment == 'blue') {
   $color = imagecolorallocate($im, 0, 255, 0);
 } elseif ($deployment == 'red')  {
   $color = imagecolorallocate($im, 255, 0, 0);
+} elseif ($deployment == 'gonnabearainbow')  {
+  $color = imagecolorallocate($im, 100, 100, 1000);
 } else {
   $color = imagecolorallocate($im, 0, 0, 255);
 }
